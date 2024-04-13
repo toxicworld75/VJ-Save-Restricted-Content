@@ -11,12 +11,12 @@ import json
 with open('config.json', 'r') as f: DATA = json.load(f)
 def getenv(var): return os.environ.get(var) or DATA.get(var, None)
 
-bot_token = getenv("6961172686:AAHPKN0nf04Lk21qzeEJaTaO1T8bVRGXYcM") 
-api_hash = getenv("f9a13ccebd0545e122eb8f99247b2aca") 
-api_id = getenv("15350310")
+bot_token = getenv("6375808101:AAErRzBL6cFFdxqkbUuSjDy3Tx0h6BQ__rk") 
+api_hash = getenv("e3b8632e5034801fbeaea7aa3283f442") 
+api_id = getenv("13892075")
 bot = Client("mybot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
-ss = getenv("STRING")
+ss = getenv("BACGp88O4PT4F7ivHz06mjSEldU2wUCrSur0_n2kYd4BQCdvG9ttc13g9XTZoeFVMvjkJHfSRRoWufeqDIe7Eb8WoveVeiD-kgDVYeTMr-TBCDHCp8VJx2KvPaMCdkh05bE2sS9HxXKoxLzI6rKn6bwbvlaDmkyDkdIsUcPI4f52qlepEG80zHA4h1ClVEp8NO4oxCrisMdP26NqzYLz9DKe5WFZVTSafHGxWQk1WKP2_L21PSiVQgecW9wdwFf07_sX15lkLvUZvsp9JDNkjOoI0fAlDiu2ZI1FFFGJHMcSbnZfV5-juzAtZ94Dj85ZqLnFhsmT2UvyRb_AmSrQEsQnAAAAAYFOsLIA")
 if ss is not None:
 	acc = Client("myacc" ,api_id=api_id, api_hash=api_hash, session_string=ss)
 	acc.start()
@@ -103,7 +103,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 		for msgid in range(fromID, toID+1):
 
 			# private
-			if "https://t.me/c/" in message.text:
+			if "https://t.me/privatearjun" in message.text:
 				chatid = int("-100" + datas[4])
 				
 				if acc is None:
@@ -261,7 +261,7 @@ then send post/s link__**
 **__send link with** '/b/', **bot's username and message id, you might want to install some unofficial client to get the id like below__**
 
 ```
-https://t.me/b/botusername/4321
+https://t.me/b/privatearjun
 ```
 
 **MULTI POSTS**
