@@ -101,7 +101,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 		for msgid in range(fromID, toID+1):
 
 			# private
-			if "https://t.me/c/" in message.text:
+			if "https://t.me/Privatearjun" in message.text:
 				chatid = int("-100" + datas[4])
 				
 				if acc is None:
@@ -113,7 +113,7 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 				# except Exception as e: bot.send_message(message.chat.id,f"**Error** : __{e}__", reply_to_message_id=message.id)
 			
 			# bot
-			elif "https://t.me/b/" in message.text:
+			elif "https://t.me/privatearjun" in message.text:
 				username = datas[4]
 				
 				if acc is None:
@@ -259,7 +259,7 @@ then send post/s link__**
 **__send link with** '/b/', **bot's username and message id, you might want to install some unofficial client to get the id like below__**
 
 ```
-https://t.me/b/botusername/4321
+https://t.me/privatearjun
 ```
 
 **MULTI POSTS**
